@@ -1,0 +1,81 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1466618572466-002f11d518db?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80");
+    background-size: 100% 100%;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 7rem;
+    margin-bottom: 1rem;
+    text-shadow: 4px 4px 4px rgba(150, 150, 150, 1);
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 4px 4px 4px rgba(150, 150, 150, 1);
+}
+
+form {
+    margin-top: 1rem;
+    display: flex;
+    margin: 1rem auto 0;
+    width: 70%;
+    max-width: 600px;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid white;
+    padding: 1rem;
+    color: white;
+    font-family: inherit;
+    letter-spacing: 0.05rem;
+    flex-grow: 1;
+    margin-right: 0.5rem;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: white;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-family: inherit;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+    min-width: 120px;
+}
+
+@media (max-width: 688px) {
+    h1 {
+        font-size: 4rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    form {
+        flex-direction: column;
+    }
+    button {
+        align-self: center;
+        margin-top: 1rem;
+    }
+}
